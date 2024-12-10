@@ -1,91 +1,110 @@
-const questions = [
-    {
-        question: "What is a tissue in biology?",
-        options: ["A group of cells", "An organ", "A system", "A single cell"],
-        correct: 0,
-    },
-    {
-        question: "Which organ pumps blood in the body?",
-        options: ["Lungs", "Heart", "Brain", "Liver"],
-        correct: 1,
-    },
-    {
-        question: "What does the pH scale measure?",
-        options: ["Temperature", "Acidity or alkalinity", "Pressure", "Energy"],
-        correct: 1,
-    },
-    {
-        question: "What is the pH of a neutral substance?",
-        options: ["0", "7", "14", "10"],
-        correct: 1,
-    },
-    {
-        question: "Which ion is released by acids?",
-        options: ["OH⁻", "H⁺", "Na⁺", "Cl⁻"],
-        correct: 1,
-    },
-    {
-        question: "What is the main function of the skeleton?",
-        options: ["Circulation", "Protection and structure", "Digestion", "Photosynthesis"],
-        correct: 1,
-    },
-    {
-        question: "What unit measures pressure?",
-        options: ["Meters", "Newtons", "Pascals", "Watts"],
-        correct: 2,
-    },
-    {
-        question: "What process do plants use to make food?",
-        options: ["Respiration", "Photosynthesis", "Fermentation", "Osmosis"],
-        correct: 1,
-    },
-    {
-        question: "What is the waste product of respiration?",
-        options: ["Oxygen", "Carbon dioxide", "Water", "Glucose"],
-        correct: 1,
-    },
-    {
-        question: "What pigment is required for photosynthesis?",
-        options: ["Chlorophyll", "Haemoglobin", "Keratin", "Melanin"],
-        correct: 0,
-    },
-    // Add more questions here as needed
-];
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f8ff;
+    color: #333;
+}
 
-const quizContainer = document.getElementById("quiz-questions");
-const submitButton = document.getElementById("submit-quiz");
-const resultContainer = document.getElementById("quiz-result");
+header {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
 
-// Generate quiz questions
-questions.forEach((q, index) => {
-    const questionElement = document.createElement("div");
-    questionElement.classList.add("question");
-    questionElement.innerHTML = `
-        <p>${index + 1}. ${q.question}</p>
-        ${q.options
-            .map(
-                (option, i) =>
-                    `<label>
-                        <input type="radio" name="question-${index}" value="${i}"> ${option}
-                    </label><br>`
-            )
-            .join("")}
-    `;
-    quizContainer.appendChild(questionElement);
-});
+h1 {
+    margin: 0;
+}
 
-// Quiz submission logic
-submitButton.addEventListener("click", () => {
-    let score = 0;
+button.quiz-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
 
-    questions.forEach((q, index) => {
-        const selectedOption = document.querySelector(
-            `input[name="question-${index}"]:checked`
-        );
-        if (selectedOption && parseInt(selectedOption.value) === q.correct) {
-            score++;
-        }
-    });
+button.quiz-btn:hover {
+    background-color: #45a049;
+}
 
-    resultContainer.textContent = `You scored ${score} out of ${questions.length}!`;
-});
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #4CAF50;
+    color: white;
+}
+
+/* Main Content Styles */
+.content {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+/* Modal for quiz */
+.quiz-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.quiz-answer {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-answer:hover {
+    background-color: #e0e0e0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.correct {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.incorrect {
+    background-color: #f44336;
+    color: white;
+}
