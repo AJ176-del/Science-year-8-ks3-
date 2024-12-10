@@ -1,87 +1,139 @@
-<!DOCTYPE html>
-<html>
-<head>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+# --- KS3 Science Topics Program ---
+# This program covers Year 8 topics: tissues and organs, acids and alkalis,
+# movement and pressure, respiration, and photosynthesis.
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
+# Import necessary modules
+import math
+import random
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+# --- Introduction ---
+def introduction():
+    print("Welcome to the KS3 Science Year 8 Program!")
+    print("This program will cover the following topics:")
+    print("1. Tissues and Organs")
+    print("2. Acids and Alkalis")
+    print("3. Movement and Pressure")
+    print("4. Respiration")
+    print("5. Photosynthesis")
+    print("Through this interactive program, you'll learn key concepts, "
+          "formulas, and examples related to these topics.")
+    print("At the end of each section, there will be quiz questions to test your understanding.")
+    print("Let's begin!\n")
 
-nav li {
-    display: inline-block;
-    margin-right: 20px;
-}
+# --- Tissues and Organs ---
+def tissues_and_organs():
+    print("\n--- Tissues and Organs ---")
+    print("Tissues are groups of similar cells that work together to perform a specific function.")
+    print("For example, muscle tissue is made of cells that contract to produce movement, "
+          "while nervous tissue transmits signals throughout the body.")
+    print("Organs are made up of different types of tissues working together to perform specific roles.")
+    print("For instance, the heart contains muscle tissue for pumping blood and nervous tissue to control the heartbeat.")
+    print("Organs do not work alone. They are part of organ systems, like the digestive system or circulatory system.")
+    print("\nQuick fact: The human body has about 78 organs, including vital ones like the heart, brain, and lungs.")
+    print("\nQuiz Time!")
+    question1 = input("Q1: Which organ pumps blood around the body? ").lower()
+    if question1 == "heart":
+        print("Correct!")
+    else:
+        print("Incorrect. The correct answer is 'heart'.")
+    question2 = input("Q2: What type of tissue transmits electrical signals? ").lower()
+    if question2 == "nervous tissue" or question2 == "nervous":
+        print("Correct!")
+    else:
+        print("Incorrect. The correct answer is 'nervous tissue'.")
 
-section {
-    padding: 20px;
-}
+# --- Acids and Alkalis ---
+def acids_and_alkalis():
+    print("\n--- Acids and Alkalis ---")
+    print("The pH scale is a measure of how acidic or alkaline a substance is. It ranges from 0 to 14.")
+    print("Substances with a pH less than 7 are acidic. Acids taste sour and can be corrosive.")
+    print("Examples include lemon juice, vinegar, and stomach acid (hydrochloric acid).")
+    print("Substances with a pH greater than 7 are alkaline. Alkalis feel slippery and are often used in cleaning products.")
+    print("Examples include soap, baking soda, and limewater.")
+    print("Neutral substances, such as pure water, have a pH of exactly 7.")
+    print("\nQuick fact: Indicators like litmus paper and universal indicator show whether a substance is an acid or alkali.")
+    print("\nQuiz Time!")
+    question3 = input("Q3: What is the pH of a neutral substance? ")
+    if question3 == "7":
+        print("Correct!")
+    else:
+        print("Incorrect. The correct answer is '7'.")
+    question4 = input("Q4: Is limewater an acid or an alkali? ").lower()
+    if question4 == "alkali":
+        print("Correct!")
+    else:
+        print("Incorrect. The correct answer is 'alkali'.")
 
-img {
-    max-width: 100%;
-}
+# --- Movement and Pressure ---
+def movement_and_pressure():
+    print("\n--- Movement and Pressure ---")
+    print("Pressure is the force applied per unit area, measured in newtons per square meter (N/m²) or pascals (Pa).")
+    print("The formula for pressure is: Pressure = Force / Area.")
+    print("For example, if a force of 50 N is applied over an area of 5 m², the pressure is 10 N/m².")
+    print("Movement occurs when forces acting on an object are unbalanced. These forces can include gravity, friction, and air resistance.")
+    print("Smaller areas increase pressure for the same force, which is why sharp objects like knives cut better.")
+    print("\nQuick fact: Atmospheric pressure is caused by the weight of air above us and decreases as altitude increases.")
+    print("\nQuiz Time!")
+    question5 = input("Q5: If a force of 10 N is applied over an area of 2 m², what is the pressure? ")
+    if question5 == "5" or question5 == "5 n/m²":
+        print("Correct!")
+    else:
+        print("Incorrect. The correct answer is '5 N/m²'.")
+    question6 = input("Q6: True or False - Larger area reduces pressure for the same force. ").lower()
+    if question6 == "true":
+        print("Correct!")
+    else:
+        print("Incorrect. The correct answer is 'True'.")
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-}
-    <title>KS3 Science Year 8</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>KS3 Science Year 8</h1>
-        <nav>
-            <ul>
-                <li><a href="#tissues-organs">Tissues and Organs</a></li>
-                <li><a href="#acids-alkalis">Acids and Alkalis</a></li>
-                <li><a href="#movement-pressure">Movement and Pressure</a></li>
-                <li><a href="#respiration-photosynthesis">Respiration and Photosynthesis</a></li>
-            </ul>
-        </nav>
-    </header>
+# --- Respiration ---
+def respiration():
+    print("\n--- Respiration ---")
+    print("Respiration is the process by which living organisms release energy from glucose.")
+    print("This energy is essential for movement, growth, and repair.")
+    print("Aerobic respiration requires oxygen and occurs in most plants and animals. Its formula is:")
+    print("Glucose + Oxygen -> Carbon dioxide + Water + Energy.")
+    print("Anaerobic respiration does not require oxygen and produces less energy. In humans, it produces lactic acid:")
+    print("Glucose -> Lactic acid + Energy.")
+    print("\nQuick fact: In yeast, anaerobic respiration produces ethanol and is used in brewing and baking.")
+    print("\nQuiz Time!")
+    question7 = input("Q7: What gas is essential for aerobic respiration? ").lower()
+    if question7 == "oxygen":
+        print("Correct!")
+    else:
+        print("Incorrect. The correct answer is 'oxygen'.")
+    question8 = input("Q8: What is a by-product of anaerobic respiration in humans? ").lower()
+    if question8 == "lactic acid":
+        print("Correct!")
+    else:
+        print("Incorrect. The correct answer is 'lactic acid'.")
 
-    <section id="tissues-organs">
-        <h2>Tissues and Organs</h2>
-        <p>Explanation of tissues and organs</p>
-        <img src="tissues-organs.jpg" alt="Tissues and Organs">
-    </section>
+# --- Photosynthesis ---
+def photosynthesis():
+    print("\n--- Photosynthesis ---")
+    print("Photosynthesis is the process by which green plants use sunlight to make their own food.")
+    print("The process occurs in the chloroplasts, which contain the green pigment chlorophyll.")
+    print("The formula for photosynthesis is:")
+    print("Carbon dioxide + Water + Light energy -> Glucose + Oxygen.")
+    print("This process is vital because it provides energy for plants and oxygen for other living organisms.")
+    print("\nQuick fact: Photosynthesis mainly happens in the leaves of plants.")
+    print("\nQuiz Time!")
+    question9 = input("Q9: What pigment absorbs sunlight in plants? ").lower()
+    if question9 == "chlorophyll":
+        print("Correct!")
+    else:
+        print("Incorrect. The correct answer is 'chlorophyll'.")
+    question10 = input("Q10: What gas is released as a by-product of photosynthesis? ").lower()
+    if question10 == "oxygen":
+        print("Correct!")
+    else:
+        print("Incorrect. The correct answer is 'oxygen'.")
 
-    <section id="acids-alkalis">
-        <h2>Acids and Alkalis</h2>
-        <p>Explanation of acids and alkalis</p>
-        <img src="acids-alkalis.jpg" alt="Acids and Alkalis">
-    </section>
+# --- Program Execution ---
+introduction()
+tissues_and_organs()
+acids_and_alkalis()
+movement_and_pressure()
+respiration()
+photosynthesis()
 
-    <section id="movement-pressure">
-        <h2>Movement and Pressure</h2>
-        <p>Explanation of movement and pressure</p>
-        <img src="movement-pressure.jpg" alt="Movement and Pressure">
-    </section>
-
-    <section id="respiration-photosynthesis">
-        <h2>Respiration and Photosynthesis</h2>
-        <p>Explanation of respiration and photosynthesis</p>
-        <img src="respiration-photosynthesis.jpg" alt="Respiration and Photosynthesis">
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Your Name</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+print("\nThank you for completing the KS3 Science Program! Keep studying and exploring!")
