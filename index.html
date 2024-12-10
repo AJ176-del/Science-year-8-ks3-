@@ -1,82 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="styles/styles.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KS3 Year 8 Science</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-</head>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KS3 Year 8 Science</title>
-    <!-- Correct link to the styles.css file -->
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>KS3 Year 8 Science</h1>
-        <nav>
-            <ul>
-                <li><a href="#tissues-and-organs">Tissues & Organs</a></li>
-                <li><a href="#acids-and-alkalis">Acids & Alkalis</a></li>
-                <li><a href="#movement-and-pressure">Movement & Pressure</a></li>
-                <li><a href="#respiration-and-photosynthesis">Respiration & Photosynthesis</a></li>
-                <li><a href="#quiz">Quiz</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="tissues-and-organs" class="card">
-            <h2>Tissues & Organs</h2>
-            <p>
-                Tissues are groups of specialized cells that have similar structures and perform a common function. For example, muscle tissue contracts to create movement, while epithelial tissue covers and protects surfaces in the body. Each type of tissue is crucial for the proper functioning of the body.
-            </p>
-            <p>
-                Organs are made up of multiple tissues that work together to perform specific tasks. For instance, the heart is responsible for pumping blood throughout the body.
-            </p>
-        </section>
-        <section id="acids-and-alkalis" class="card">
-            <h2>Acids & Alkalis</h2>
-            <p>
-                Acids are substances that release hydrogen ions (H⁺) in a solution, while alkalis release hydroxide ions (OH⁻). The pH scale, ranging from 0 to 14, measures how acidic or alkaline a substance is. Substances below pH 7 are acidic, those above 7 are alkaline, and pH 7 is neutral.
-            </p>
-            <p>
-                Understanding acids and alkalis helps in industries like medicine, agriculture, and food production.
-            </p>
-        </section>
-        <section id="movement-and-pressure" class="card">
-            <h2>Movement & Pressure</h2>
-            <p>
-                Movement in living organisms involves the skeleton and muscles. The human skeleton provides structure, while joints and muscles allow flexibility and mobility.
-            </p>
-            <p>
-                Pressure is the force applied per unit area. It explains why sharp objects are more effective at cutting compared to blunt ones.
-            </p>
-        </section>
-        <section id="respiration-and-photosynthesis" class="card">
-            <h2>Respiration & Photosynthesis</h2>
-            <p>
-                Respiration is the process of breaking down glucose to release energy, essential for life processes. Photosynthesis is the process plants use to produce glucose and oxygen using sunlight, water, and carbon dioxide.
-            </p>
-            <p>
-                Together, these processes form a cycle that maintains the balance of oxygen and carbon dioxide in the environment.
-            </p>
-        </section>
-        <section id="quiz" class="card">
-            <h2>Test Your Knowledge</h2>
-            <form id="quiz-form">
-                <div id="quiz-questions"></div>
-                <button type="button" id="submit-quiz">Submit Quiz</button>
-                <p id="quiz-result"></p>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>KS3 Year 8 Science Website | Created by Adem Jaouadi</p>
-    </footer>
+
+<header>
+    <h1>KS3 Year 8 Science</h1>
+</header>
+
+<main>
+    <!-- Main Content -->
+    <div class="content">
+        <h2>Tissues and Organs</h2>
+        <p>
+            Tissues are groups of similar cells working together to perform a particular function. For example, muscle tissue contracts to allow movement, while nerve tissue transmits signals throughout the body.
+        </p>
+        <p>
+            Organs are made up of different types of tissues that work together to carry out a specific job. For example, the heart is an organ made up of muscle tissue, connective tissue, and other types, all working together to pump blood.
+        </p>
+
+        <h2>Acids and Alkalis</h2>
+        <p>
+            Acids are substances that have a pH less than 7, while alkalis are substances with a pH greater than 7. Common acids include citric acid found in lemon juice, and common alkalis include sodium hydroxide.
+        </p>
+        <p>
+            Neutral substances have a pH of 7, such as pure water. In science, we often use indicators, like litmus paper, to test whether a substance is acidic, alkaline, or neutral.
+        </p>
+
+        <h2>Movement and Pressure</h2>
+        <p>
+            Movement in animals is controlled by the nervous system and muscles. Animals use muscles to move bones, allowing for various forms of movement such as walking, running, or swimming.
+        </p>
+        <p>
+            Pressure is the force exerted on an area. For example, when you inflate a balloon, the air inside creates pressure, making the balloon expand.
+        </p>
+
+        <h2>Respiration and Photosynthesis</h2>
+        <p>
+            Respiration is the process by which organisms release energy from food. In humans, this occurs inside the cells where oxygen is used to convert glucose into energy.
+        </p>
+        <p>
+            Photosynthesis is the process by which plants use sunlight to convert carbon dioxide and water into glucose and oxygen. This is how plants make their own food and produce the oxygen we breathe.
+        </p>
+
+        <!-- Quiz Button -->
+        <button id="start-quiz-btn" class="quiz-btn">Click here to do quiz about what you just did</button>
+    </div>
+
+    <!-- Quiz Modal (Initially hidden) -->
+    <div id="quiz-modal" class="quiz-modal">
+        <div class="quiz-container">
+            <div id="quiz-question"></div>
+            <div id="quiz-answers"></div>
+            <button id="next-btn" class="quiz-btn">Next Question</button>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Science Quiz</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
