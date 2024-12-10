@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+    <title>KS3 Science Year 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>KS3 Science Year 8</h1>
+        <nav>
+            <ul>
+                <li><a href="#tissues-organs">Tissues and Organs</a></li>
+                <li><a href="#acids-alkalis">Acids and Alkalis</a></li>
+                <li><a href="#movement-pressure">Movement and Pressure</a></li>
+                <li><a href="#respiration-photosynthesis">Respiration and Photosynthesis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tissues-organs">
+        <h2>Tissues and Organs</h2>
+        <p>Explanation of tissues and organs</p>
+        <img src="tissues-organs.jpg" alt="Tissues and Organs">
+    </section>
+
+    <section id="acids-alkalis">
+        <h2>Acids and Alkalis</h2>
+        <p>Explanation of acids and alkalis</p>
+        <img src="acids-alkalis.jpg" alt="Acids and Alkalis">
+    </section>
+
+    <section id="movement-pressure">
+        <h2>Movement and Pressure</h2>
+        <p>Explanation of movement and pressure</p>
+        <img src="movement-pressure.jpg" alt="Movement and Pressure">
+    </section>
+
+    <section id="respiration-photosynthesis">
+        <h2>Respiration and Photosynthesis</h2>
+        <p>Explanation of respiration and photosynthesis</p>
+        <img src="respiration-photosynthesis.jpg" alt="Respiration and Photosynthesis">
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
