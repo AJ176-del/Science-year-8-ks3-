@@ -26,10 +26,8 @@ const quizQuestions = [
 let currentQuestion = 0;
 let score = 0;
 
-// Get elements
 const quizButton = document.getElementById('quiz-button');
 const quizModal = document.getElementById('quiz-modal');
-const closeQuizButton = document.getElementById('close-quiz');
 const quizContent = document.querySelector('.quiz-content');
 
 // Start Quiz
@@ -54,7 +52,7 @@ function showQuestion() {
         .join("")}
     </div>
   `;
-  document.querySelectorAll('.quiz-option').forEach((button) =>
+  document.querySelectorAll('.quiz-option').forEach(button =>
     button.addEventListener('click', checkAnswer)
   );
 }
@@ -62,15 +60,10 @@ function showQuestion() {
 // Check Answer
 function checkAnswer(event) {
   const selectedOption = parseInt(event.target.dataset.index, 10);
-  if (selectedOption === quizQuestions[currentQuestion].correct) {
-    score++;
-  }
+  if (selectedOption === quizQuestions[currentQuestion].correct) score++;
   currentQuestion++;
-  if (currentQuestion < quizQuestions.length) {
-    showQuestion();
-  } else {
-    showResults();
-  }
+  if (currentQuestion < quizQuestions.length) showQuestion();
+  else showResults();
 }
 
 // Show Results
@@ -82,12 +75,5 @@ function showResults() {
     <button id="close-quiz-final">Close</button>
   `;
   document.getElementById('restart-quiz').addEventListener('click', startQuiz);
-  document.getElementById('close-quiz-final').addEventListener('click', () => {
-    quizModal.classList.add('hidden');
-  });
+  document.getElementById('close-quiz-final').addEventListener('click', () => quizModal.classList.add('hidden'));
 }
-
-// Close Quiz Modal
-closeQuizButton.addEventListener('click', () => {
-  quizModal.classList.add('hidden');
-});
