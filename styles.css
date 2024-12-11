@@ -12,6 +12,7 @@ header {
   padding: 20px;
   background: #ffb3ba;
   color: white;
+  animation: fadeIn 1s ease-in-out;
 }
 
 main {
@@ -24,6 +25,7 @@ section {
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.8s ease-in-out;
 }
 
 section:nth-child(even) {
@@ -40,6 +42,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
 button:hover {
@@ -66,8 +69,75 @@ button:hover {
   border-radius: 10px;
   text-align: center;
   width: 300px;
+  animation: popUp 0.5s ease-in-out;
 }
 
+.quiz-option {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-option:hover {
+  background-color: #0056b3;
+}
+
+#restart-quiz,
+#close-quiz-final {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#restart-quiz:hover,
+#close-quiz-final:hover {
+  background-color: #218838;
+}
+
+/* Utility Classes */
 .hidden {
   display: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes popUp {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
