@@ -1,81 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KS3 Year 8 Science</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<head>
-    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the site mobile responsive -->
-    <title>KS3 Year 8 Science</title> <!-- Title of the webpage, displayed in the browser tab -->
-
-    <!-- Link to external CSS file in the 'styles' folder -->
-    <link rel="stylesheet" href="styles/styles.css">
-
-    <!-- Link to external JavaScript file in the 'scripts' folder -->
-    <script defer src="scripts/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KS3 Year 8 Science</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
+  <header>
     <h1>KS3 Year 8 Science</h1>
-</header>
+    <p>Learn about tissues and organs, acids and alkalis, movement and pressure, respiration, and photosynthesis!</p>
+  </header>
 
-<main>
-    <!-- Main Content -->
-    <div class="content">
-        <h2>Tissues and Organs</h2>
-        <p>
-            Tissues are groups of similar cells working together to perform a particular function. For example, muscle tissue contracts to allow movement, while nerve tissue transmits signals throughout the body.
-        </p>
-        <p>
-            Organs are made up of different types of tissues that work together to carry out a specific job. For example, the heart is an organ made up of muscle tissue, connective tissue, and other types, all working together to pump blood.
-        </p>
+  <main>
+    <section id="tissues-organs" class="animated-section">
+      <h2>Tissues and Organs</h2>
+      <p>
+        Tissues are groups of cells that work together to perform a specific function. Examples include muscle tissue for movement and nerve tissue for signaling. Organs are made of multiple tissues that collaborate to form a structure with a particular function, such as the heart or lungs.
+      </p>
+      <p>
+        The human body relies on these systems to perform life-sustaining functions. For instance, the digestive system includes organs like the stomach and intestines to process food into energy. Understanding tissues and organs helps us appreciate how our bodies work!
+      </p>
+    </section>
 
-        <h2>Acids and Alkalis</h2>
-        <p>
-            Acids are substances that have a pH less than 7, while alkalis are substances with a pH greater than 7. Common acids include citric acid found in lemon juice, and common alkalis include sodium hydroxide.
-        </p>
-        <p>
-            Neutral substances have a pH of 7, such as pure water. In science, we often use indicators, like litmus paper, to test whether a substance is acidic, alkaline, or neutral.
-        </p>
+    <section id="acids-alkalis" class="animated-section">
+      <h2>Acids and Alkalis</h2>
+      <p>
+        Acids are substances with a pH less than 7, while alkalis are substances with a pH greater than 7. Neutral substances have a pH of 7. Examples of acids include vinegar and lemon juice, while soaps and baking soda are common alkalis.
+      </p>
+      <p>
+        The pH scale helps us measure the strength of acids and alkalis. Acids can be dangerous at high concentrations, but they also have many uses, such as in cleaning and food preservation. Alkalis are used in household cleaners and manufacturing.
+      </p>
+    </section>
 
-        <h2>Movement and Pressure</h2>
-        <p>
-            Movement in animals is controlled by the nervous system and muscles. Animals use muscles to move bones, allowing for various forms of movement such as walking, running, or swimming.
-        </p>
-        <p>
-            Pressure is the force exerted on an area. For example, when you inflate a balloon, the air inside creates pressure, making the balloon expand.
-        </p>
+    <section id="movement-pressure" class="animated-section">
+      <h2>Movement and Pressure</h2>
+      <p>
+        Movement in the body depends on the skeletal and muscular systems. Muscles contract to pull on bones, enabling movement. Joints like hinges allow flexibility, while ligaments hold bones together for stability.
+      </p>
+      <p>
+        Pressure is the force applied over a surface area. It affects various processes, such as blood circulation in the body and atmospheric pressure affecting our breathing. Engineers use pressure concepts to design tools like syringes and hydraulics.
+      </p>
+    </section>
 
-        <h2>Respiration and Photosynthesis</h2>
-        <p>
-            Respiration is the process by which organisms release energy from food. In humans, this occurs inside the cells where oxygen is used to convert glucose into energy.
-        </p>
-        <p>
-            Photosynthesis is the process by which plants use sunlight to convert carbon dioxide and water into glucose and oxygen. This is how plants make their own food and produce the oxygen we breathe.
-        </p>
+    <section id="respiration-photosynthesis" class="animated-section">
+      <h2>Respiration and Photosynthesis</h2>
+      <p>
+        Respiration is the process by which organisms break down glucose to release energy. This occurs in the mitochondria of cells and is essential for life. Aerobic respiration requires oxygen, while anaerobic respiration occurs without it.
+      </p>
+      <p>
+        Photosynthesis is how plants convert sunlight, carbon dioxide, and water into glucose and oxygen. This process happens in chloroplasts using chlorophyll. It is the foundation of life on Earth, providing energy and oxygen for other organisms.
+      </p>
+    </section>
 
-        <!-- Quiz Button -->
-        <button id="start-quiz-btn" class="quiz-btn">Click here to do quiz about what you just did</button>
-    </div>
+    <button id="quiz-button">Take the Quiz</button>
+  </main>
 
-    <!-- Quiz Modal (Initially hidden) -->
-    <div id="quiz-modal" class="quiz-modal">
-        <div class="quiz-container">
-            <div id="quiz-question"></div>
-            <div id="quiz-answers"></div>
-            <button id="next-btn" class="quiz-btn">Next Question</button>
-        </div>
-    </div>
-</main>
+  <footer>
+    <p>&copy; 2024 KS3 Year 8 Science</p>
+  </footer>
 
-<footer>
-    <p>&copy; 2024 Science Quiz</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
