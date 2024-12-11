@@ -1,5 +1,14 @@
-document.getElementById('quiz-button').addEventListener('click', openQuiz);
+// Get elements
+const quizButton = document.getElementById('quiz-button');
+const quizModal = document.getElementById('quiz-modal');
+const closeQuizButton = document.getElementById('close-quiz');
 
-function openQuiz() {
-  alert("The quiz will be coming soon! Replace this alert with your quiz logic.");
-}
+// Open quiz modal
+quizButton.addEventListener('click', () => {
+  quizModal.classList.remove('hidden');
+});
+
+// Close quiz modal
+closeQuizButton.addEventListener('click', () => {
+  quizModal.classList.add('hidden');
+});
