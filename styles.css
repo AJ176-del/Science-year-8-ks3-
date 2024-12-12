@@ -37,6 +37,9 @@ button {
   animation: fadeIn 1.2s ease-in-out;
 }
 
+button:hover {
+  background: #009977;
+}
 
 /* Additional Styling Fixes for Visibility */
 .quiz-option {
