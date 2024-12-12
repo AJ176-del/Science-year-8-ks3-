@@ -24,18 +24,6 @@
 }
 
 /* Optional: Adjust button positioning */
-button {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  background: #00cc99;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  animation: fadeIn 1.2s ease-in-out;
-}
 
 button:hover {
   background: #009977;
